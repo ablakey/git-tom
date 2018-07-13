@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Git Tom",
+    "version": "0.0.1",
+    "description": "Blame all mistakes on someone. Usually Tom.",
+    "content_scripts": [{
+      "run_at" : "document_end",
+      "js": ["content.js"],
+      "matches": ["https://github.com/*"]
+    }]
+
+  }
